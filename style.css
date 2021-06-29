@@ -263,7 +263,7 @@ main {
 }
 
 .first-view .container {
-  background-image: url("/images/first-view.jpg");
+  background-image: url("images/first-view.jpg");
   background-position: center;
   background-size: cover;
   width: 100vw;
@@ -647,14 +647,6 @@ main {
     height: auto;
     opacity: 1;
     padding: 5px;
-  }
-  .footer .accordion.clicked h5 {
-    margin-bottom: 28px;
-  }
-  .footer .accordion.clicked li {
-    height: auto;
-    padding: 5px;
-    opacity: 1;
   }
   .footer .logo {
     grid-area: logo;

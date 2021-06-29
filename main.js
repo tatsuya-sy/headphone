@@ -23,10 +23,13 @@ const footerModule = (() => {
   const accordions = document.getElementsByClassName('accordion');
   console.log(accordions[0]);
 
-  for (let i = 0; i < accordions.length; i++) {
-    accordions[i].addEventListener('click', () => {
-      accordions[i].classList.toggle('clicked');
-    })
+  //pc画面の時は、クラスをつけない
+  if (window.innerWidth < 1200) {
+    for (let i = 0; i < accordions.length; i++) {
+      accordions[i].addEventListener('click', () => {
+        accordions[i].classList.toggle('clicked');
+      })
+    }
   }
 })();
 
