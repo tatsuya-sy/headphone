@@ -11,6 +11,10 @@
       href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <div class="top">
@@ -112,7 +116,23 @@
             <a href="#">購入はこちら</a>
           </div>
           <div class="images">
-            <img src="images/goods1.jpg" />
+            <!-- Slider main container -->
+            <div class="swiper-container">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="images/goods1.jpg" /></div>
+                <div class="swiper-slide"><img src="images/good2.jpg" /></div>
+                <div class="swiper-slide"><img src="images/good3.jpg" /></div>
+                ...
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
             <div class="main-btn pc">
               <a href="#">購入はこちら</a>
             </div>
@@ -175,6 +195,8 @@
       </div>
     </footer>
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="swiper.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
